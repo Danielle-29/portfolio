@@ -1,0 +1,127 @@
+
+:root {
+    --cor-primaria: #000000;
+    --cor-secundaria: #F6F6F6;
+    --cor-terciaria: #22D4FD;
+    --cor-hover: #007bff;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: var(--cor-primaria);
+    color: var(--cor-secundaria);
+    /*height: 100vh;*/
+    box-sizing: border-box;
+}
+
+strong {
+    color: var(--cor-terciaria);
+}
+
+.cabecalho {
+    padding: 2% 0 0 0;
+}
+
+.cabecalho__menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cabecalho__menu__link {
+    font-size: 1.12rem;
+    color: var(--cor-terciaria);
+    margin: 0 10px;
+    padding: 5px 10px;
+    text-decoration: none;
+}
+
+.cabecalho__menu__link:hover {
+    color: var(--cor-hover)
+}
+
+main {
+    margin: 10% 15%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 50px;
+}
+
+.apresentacao__links__subtitulo {
+    font-weight: 400;
+    font-size: 1.5rem;
+}
+
+.apresentacao__links__navegacao {
+    display: flex;
+    border: solid 2px var(--cor-terciaria);
+    justify-content: center;
+    gap: 16px;
+    width: 50%;
+    border-radius: 8px;
+    text-align: center;
+    text-decoration: none;
+    padding: 18.5px 0;
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #f6f6f6;
+}    
+
+.link {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+    gap: 32px;
+}
+
+.apresentacao__links__navegacao:hover {
+    background-color: var(--cor-primaria);
+}
+
+.texto {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    font-size: 1.5rem;
+}
+
+.imagem_principal {
+    height: 400px;
+    width: 50%;
+    display: block;
+    margin: 0 auto;
+}
+
+.rodape {
+    padding: 12px;
+    color: var(--cor-primaria);
+    background-color: var(--cor-terciaria);
+    text-align: center;
+    font-size: 1.12rem;
+}
+
+@media (max-width: 860px){
+    .cabecalho {
+        padding: 5%;
+    }
+
+    .cabecalho__menu {
+        justify-content: center;
+    }
+
+    main {
+        flex-direction: column-reverse;
+        padding: 5%;
+    }
+
+    .texto {
+        width: auto;
+    }
+}
